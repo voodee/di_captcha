@@ -1,0 +1,25 @@
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js .xml .json .rss
+
+ServerSignature Off
+
+php_flag magic_quotes_gpc 0
+php_flag magic_quotes_runtime 0
+
+<IfModule mod_deflate.c>
+  # place filter 'DEFLATE' on all outgoing content
+  SetOutputFilter DEFLATE
+  # exclude uncompressible content via file type
+  SetEnvIfNoCase Request_URI \.(?:gif|png|rar|zip)$ no-gzip
+  <IfModule mod_headers.c>
+    # properly handle requests coming from behind proxies
+    Header append Vary User-Agent
+  </IfModule>
+</IfModule>
+<IfModule mod_deflate.c>
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+DirectoryIndex index.php

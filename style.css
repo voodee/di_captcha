@@ -1,0 +1,18 @@
+body, html, input, label, p {margin:0 ; padding: 0; border:0; outline: 0; font-size: 100%; vertical-align:baseline; background:transparent;}
+body {font: 100%/1.231e sans-serif, arial; *font-size:small;}
+
+#Title {font: 2.17em Verdana, sans-serif; color: #888; margin: 10px 15px 50px;}
+#Msg {font: 1em Verdana, sans-serif; color: #ce2c08; margin: 10px 15px;}
+
+form {margin: 10px 15px;}
+form p {overflow: hidden;}
+label {font: 1em/1em sans-serif, arial; color: #999;}
+input[type='text'] {font: 1.7em/1em sans-serif, arial; width: 12em; border: 1px solid #ccc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; padding: 0 5px; vertical-align: middle;}
+input[type='submit'] {width: 12em; font-size: 1.7em; background: #eee; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-bottom: 1px solid #777; border-right: 1px solid #777; padding: 5px; vertical-align: middle;}
+
+a:link, a:visited {font-size: 14px; font-family: Tahoma, Verdana, sans-serif; margin: 5px; color: #646464; text-decoration: underline;}
+a:hover, a:focus {color: #333; text-decoration: none;}
+
+#DICaptchaPic {float: left;}
+#DICaptchaPic p {float: left; width: 3px; height: 3px; margin: 0; padding: 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 1px;}
+
